@@ -1,0 +1,19 @@
+  # El puerto donde correra tu app Spring Boot
+  server:
+    port: 8080
+
+  spring:
+    datasource:
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://localhost:1433;databaseName=Rinconcito_Yauyino;encrypt=true;trustServerCertificate=true
+      username: sa
+      password: Leonardo123_
+
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
